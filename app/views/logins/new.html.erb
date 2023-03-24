@@ -1,0 +1,20 @@
+<h1>login page</h1>
+<%= form_with url: logins_path do |f| %>
+<!--<%# <%= form_tag logins_path do %> 
+<div>    
+   Email: <%= text_field_tag :email %>
+</div>
+
+<div>
+   Password: <%= text_field_tag :password %>
+</div>
+
+<div>
+    <%= submit_tag %>
+</div>-->
+<%= f.label :email %>
+   <%= f.text_field :email %>
+   <%= f.label :password %>
+   <%= f.text_field :password %>
+   <%= f.submit %>
+<% end %>

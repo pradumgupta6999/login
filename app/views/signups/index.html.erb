@@ -1,0 +1,15 @@
+<h1>Client#index</h1>
+<ul>
+    <% @signup.each do |client| %>
+    <li>
+        <p>Name: <%= client.email %></p>
+        Password: <%= client.password %>
+
+    </li>
+    <% end %>
+</ul>
+
+<%# <%= current_user.email %> 
+
+<%= link_to "sign out" ,new_signup_path, data: {turbo_method: :delete,
+turbo_confirm: "Are you confirm" }%>
